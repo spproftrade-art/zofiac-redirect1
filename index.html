@@ -1,31 +1,22 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>Open external</title>
-  <!-- на випадок, якщо JS відключений -->
-  <meta http-equiv="refresh" content="0;url=https://lnk.bio/Zodiacfory">
-  <script>
-    (function () {
-      var target = "https://lnk.bio/Zodiacfory";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Твой гороскоп ✨</title>
 
-      // якщо знаходимося в iframe / in-app webview, спробуємо перенести верхнє вікно
-      try {
-        if (window.top !== window.self) {
-          window.top.location.href = target;
-        } else {
-          // звичайна навігація
-          window.location.replace(target);
-        }
-      } catch (e) {
-        // безпечне резервне перенаправлення
-        window.location.replace(target);
-      }
-    })();
-  </script>
+  <!-- Автоматический редирект -->
+  <meta http-equiv="refresh" content="0; url=https://t.me/zodiaclory">
+
+  <!-- Безопасный переход -->
+  <meta name="referrer" content="no-referrer">
+
+  <!-- Иконка -->
+  <link rel="icon" href="https://www.svgrepo.com/show/303114/telegram-logo.svg" type="image/svg+xml">
 </head>
 <body>
-  Redirecting...
-  <p><a href="https://lnk.bio/Zodiacfory">Якщо не перенаправило — натисніть тут</a></p>
+  <h2>Идёт перенаправление...</h2>
+  <p>Если страница не открылась автоматически, нажмите <a href="https://t.me/zodiaclory">сюда</a>.</p>
 </body>
 </html>
+
